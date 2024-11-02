@@ -1,6 +1,7 @@
 from flask import Blueprint, jsonify, render_template
 from app.services.http_service import HttpService
 from app.repositories.http_repository import HttpRepository
+from flask import Blueprint, jsonify, render_template, send_from_directory
 
 http_bp = Blueprint('http', __name__)
 http_service = HttpService(HttpRepository())
@@ -8,6 +9,14 @@ http_service = HttpService(HttpRepository())
 @http_bp.route('/')
 def index():
     return render_template('index.html')
+
+@http_bp.route('/index.css')
+def serve_css():
+    return send_from_directory('templates', 'index.css')
+
+@http_bp.route('/index.js')
+def serve_js():
+    return send_from_directory('templates', 'index.js')
 
 @http_bp.route('/api/status/<code>')
 def get_status(code):
