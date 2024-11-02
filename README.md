@@ -2,7 +2,7 @@
 
 HTTPMind es una aplicación web moderna y elegante diseñada para ayudarte a entender y explorar los códigos de estado HTTP. Con una interfaz intuitiva en modo oscuro, proporciona información detallada sobre cada código de estado, incluyendo descripciones, soluciones prácticas y niveles de severidad.
 
-![HTTPMind Screenshot](screenshot.png)
+![image](https://github.com/user-attachments/assets/39b97747-2dba-4125-829d-ec746dd9f40f)
 
 ## 🚀 Características
 
